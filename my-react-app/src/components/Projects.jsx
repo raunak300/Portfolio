@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: 'Campus Canteen Website',
-    desc: '',
+    desc: 'In Progress',
     //livePreview: 'abes-cafeteria.vercel.app',
     gitLink: 'https://github.com/Priyakumar-15/ABES-CAFETERIA'
   },
