@@ -13,7 +13,7 @@ const About = () => {
             </div>
 
 
-            <h2 className="text-3xl pt-5 font-bold mb-8 border-b-2 border-purple-600 inline-block pb-1">
+            <h2 className="text-3xl md:pt-5 font-bold mb-8 border-b-2 border-purple-600 inline-block md:pb-1">
                 Education
             </h2>
 
