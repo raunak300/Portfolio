@@ -14,7 +14,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">
-          <a href="https://drive.google.com/file/d/1OGuop1O-f1Z8OuGneD4fiMNIs-9Mrg5W/view?usp=sharing" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1TgEuUQ7zK2GbnpzklYY2_cNLAEj6jeOj/view?usp=drive_link" target="_blank" rel="noreferrer">
             Resume
           </a>
           <a href="#about" className="hover:text-purple-400">About Me</a>
