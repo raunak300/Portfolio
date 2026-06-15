@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+/* body{
+  margin:0
+} */
+
+html, body{
+  margin:0
+}
+
 /* @keyframes shimmer {
   0% {
     background-position: 0% 50%;
@@ -15,20 +23,20 @@
 } */
 
 
-@keyframes shimmer {
+/* @keyframes shimmer {
   0% {
     background-position: 0% 50%;
   }
   100% {
     background-position: 100% 50%;
   }
-}
+} */
 
-.animate-gradient {
-  background: linear-gradient(to right,  #ffffff, #800080); /* black → white → purple */
+/* .animate-gradient {
+  background: linear-gradient(to right,  #ffffff, #800080); 
   background-size: 200% 200%;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   animation: shimmer 1s ease-in-out linear  infinite;
-}
+} */
