@@ -8,7 +8,7 @@ const Terminal = () => {
 
   const [command, setCommand] = useState("");
   const [allowStateChange,setallowStateChange]=useState(false);
-  const [messages,setMessages]=useState(["About","Projects","Experince","Education","Contact"]);
+  const [messages,setMessages]=useState(["Experince","Education","Contact"]);
 
   const handelKeyDown=(e)=>{
     if(e.key.trim().toLowerCase()==="enter"){

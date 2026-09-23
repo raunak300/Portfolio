@@ -11,6 +11,7 @@ import HeroSec from './UpdatePages/HeroSec'
 import { useState } from 'react'
 import StateProvider from './Context/Provider'
 import Educations from './UpdatePages/Educations'
+import Experince from './UpdatePages/Experince'
 // import { useContext } from 'react'
 // import { Dark,light } from './Data/ColorSystem'
 // import StateContext from './Context/StateMgmt'
@@ -49,10 +50,21 @@ const App = () => {
 from-slate-900
 via-indigo-950
 to-purple-900'>
-      
-      <Hero/>
-      <HeroSec/>
+      <section id="about" className="scroll-mt-32">
+        <Hero/>
+      </section>
+      <section id="hero" className="scroll-mt-32">
+
+          <HeroSec/>
+      </section>
+      <section id="experience" className="scroll-mt-32">
+
+      <Experince />
+      </section>
+      <section id="education" className="scroll-mt-32">
+
       <Educations/>
+      </section>
       
       </div>
     </StateProvider>
