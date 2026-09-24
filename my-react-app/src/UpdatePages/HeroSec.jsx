@@ -1,94 +1,71 @@
-import React, { useContext, useState } from 'react'
-import Navbar from '../UpdateComponents/Navbar'
+import React, { useContext } from 'react'
 import StateContext from '../Context/StateMgmt'
 import CodePerson from "../UpdateComponents/CodePerson"
-import { Dark, light, portfoliocolors } from "../Data/ColorSystem"
 import Terminal from "../UpdateComponents/Terminal"
-import profile from '../../assets/Profile.png'
-const HeroSec = () => {
-  const { darkMode } = useContext(StateContext);
-  const [dark, setDark] = useState(true);
 
+const HeroSec = () => {
+  const { darkMode } = useContext(StateContext)
 
   return (
-    <div
-      className={`
-        min-h-screen
-        w-full
-        flex
-        flex-col
-        items-center    
-        gap-4
-      `}
-    >
-     
-      <div className="flex flex-row w-full max-w-6xl text-white p-6 h-[60%] md:gap-4">
-        
-        <div className={`md:w-[60%] sm:w-[80%]  lg:w-[50%] p-4 mt-20 md:h-[350px] border-1-black flex sm:mx-auto`}>
-          {/* there will be terminal  */}
+    <div className="flex min-h-screen w-full flex-col items-center gap-6 overflow-x-hidden px-3 py-8 sm:px-4 md:px-6 lg:px-8">
+      <div className="flex w-full max-w-6xl flex-col items-center gap-5 text-white md:flex-row md:items-center md:justify-between md:gap-6">
+        <div className="hidden w-full md:block md:w-[60%] lg:w-[52%] md:mt-20">
           <Terminal />
         </div>
-        <div className={`lg:w-[45%] pt-0 ml-10 sm:hidden lg:flex  `}>
-          {/* will have something in here */}
-          <CodePerson/>
+
+        <div className="flex w-full max-w-[360px] items-center justify-center md:flex lg:w-[45%]">
+          <CodePerson />
         </div>
       </div>
-      <div className="w-full max-w-6xl mx-auto px-4 mt-2 mb-8">
-  {/* Card Wrapper Container */}
-  <div className="grid grid-cols-2 md:grid-cols-5 gap-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800/80 rounded-xl">
-    
-    {/* Metric 1 */}
-    <div className="flex flex-col space-y-1 p-2">
-      <span className="text-3xl md:text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-fuchsia-400">
-        10+
-      </span>
-      <span className="text-xs uppercase tracking-wider text-zinc-400 font-mono">
-        Projects Built
-      </span>
-    </div>
 
-    {/* Metric 2 */}
-    <div className="flex flex-col space-y-1 p-2 border-l border-zinc-800/40 pl-4 md:pl-6 max-sm:border-none">
-      <span className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-        6 Mos
-      </span>
-      <span className="text-xs uppercase tracking-wider text-zinc-400 font-mono">
-        Experience
-      </span>
-    </div>
+      <div className="mx-auto w-full max-w-6xl px-1 sm:px-2">
+        <div className="grid grid-cols-2 gap-3 rounded-2xl border border-zinc-800/80 bg-zinc-900/50 p-3 backdrop-blur-sm sm:gap-4 md:grid-cols-5 md:p-4">
+          <div className="flex flex-col space-y-1 p-2">
+            <span className="bg-gradient-to-r from-indigo-400 to-fuchsia-400 bg-clip-text text-2xl font-bold tracking-tight text-transparent sm:text-3xl md:text-4xl">
+              10+
+            </span>
+            <span className="font-mono text-[10px] uppercase tracking-wider text-zinc-400 sm:text-xs">
+              Projects Built
+            </span>
+          </div>
 
-    {/* Metric 3 */}
-    <div className="flex flex-col space-y-1 p-2 border-l border-zinc-800/40 pl-4 md:pl-6 max-sm:pl-0">
-      <span className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-        3+
-      </span>
-      <span className="text-xs uppercase tracking-wider text-zinc-400 font-mono">
-        Tech Stacks
-      </span>
-    </div>
+          <div className="flex flex-col space-y-1 border-l border-zinc-800/40 p-2 pl-4 sm:pl-5 md:pl-6">
+            <span className="text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
+              6 Mos
+            </span>
+            <span className="font-mono text-[10px] uppercase tracking-wider text-zinc-400 sm:text-xs">
+              Experience
+            </span>
+          </div>
 
-    {/* Metric 4 */}
-    <div className="flex flex-col space-y-1 p-2 border-l border-zinc-800/40 pl-4 md:pl-6">
-      <span className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-        250+
-      </span>
-      <span className="text-xs uppercase tracking-wider text-zinc-400 font-mono">
-        DSA Solved
-      </span>
-    </div>
+          <div className="flex flex-col space-y-1 border-l border-zinc-800/40 p-2 pl-4 sm:pl-5 md:pl-6">
+            <span className="text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
+              3+
+            </span>
+            <span className="font-mono text-[10px] uppercase tracking-wider text-zinc-400 sm:text-xs">
+              Tech Stacks
+            </span>
+          </div>
 
-    {/* Metric 5 */}
-    <div className="flex flex-col space-y-1 p-2 border-l border-zinc-800/40 pl-4 md:pl-6 max-sm:col-span-2 max-sm:border-none max-sm:pt-4">
-      <span className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-        270+
-      </span>
-      <span className="text-xs uppercase tracking-wider text-zinc-400 font-mono">
-        GitHub Commits
-      </span>
-    </div>
+          <div className="flex flex-col space-y-1 border-l border-zinc-800/40 p-2 pl-4 sm:pl-5 md:pl-6">
+            <span className="text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
+              250+
+            </span>
+            <span className="font-mono text-[10px] uppercase tracking-wider text-zinc-400 sm:text-xs">
+              DSA Solved
+            </span>
+          </div>
 
-  </div>
-</div>
+          <div className="col-span-2 flex flex-col space-y-1 border-l border-zinc-800/40 p-2 pl-4 sm:col-span-1 sm:pl-5 md:pl-6">
+            <span className="text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
+              270+
+            </span>
+            <span className="font-mono text-[10px] uppercase tracking-wider text-zinc-400 sm:text-xs">
+              GitHub Commits
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

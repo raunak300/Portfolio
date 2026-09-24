@@ -8,7 +8,6 @@ import Footer from './components/Footer'
 import './App.css'
 
 import HeroSec from './UpdatePages/HeroSec'
-import { useState } from 'react'
 import StateProvider from './Context/Provider'
 import Educations from './UpdatePages/Educations'
 import Experince from './UpdatePages/Experince'

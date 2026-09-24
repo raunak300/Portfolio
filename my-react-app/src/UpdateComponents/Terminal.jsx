@@ -18,15 +18,12 @@ const Terminal = () => {
     }
   }
   return (
-    <div className='flex flex-col h-full w-full ' style={{ transform: 'scale(1.1)' }}>
+    <div className='hidden h-full w-full md:flex md:flex-col' style={{ transform: 'scale(1.1)' }}>
       <div className='h-9 w-full bg-slate-900 flex flex-row gap-2 items-center p-2 rounded-md'>
         <div className="w-3 h-3 rounded-full bg-red-500 hover:bg-red-600 transition-colors"></div>
         <div className="w-3 h-3 rounded-full bg-yellow-500 hover:bg-yellow-600 transition-colors"></div>
         <div className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600 transition-colors"></div>
       </div>
-      {/* <div className={`h-5 w-full bg-slate-900 text-white text-md flex justify-start items-center font-mono `}>
-        cmd: Rauank@Portfolio-PC:~$
-      </div> */}
       <div className='h-[90%] w-full bg-black text-white text-sm pt-2 px-2 overflow-y-auto font-mono rounded-md'>
         {history.map((Line, idx) => {
           return (
